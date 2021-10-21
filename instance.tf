@@ -6,3 +6,4 @@ resource "aws_instance" "first-server" {
     tags = {
         Name = "prueba1"
     }
+}
