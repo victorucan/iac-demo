@@ -7,3 +7,11 @@ resource "aws_instance" "first-server" {
         Name = "prueba1"
     }
 }
+resource "aws_instance" "six-server" {
+    ami = "ami-0747bdcabd34c712a" 
+    instance_type = "t2.micro"
+#    count = "5" 
+    tags = {
+        Name = "server_dev"
+    }
+}
