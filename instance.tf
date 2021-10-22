@@ -4,13 +4,13 @@ resource "aws_instance" "first-server" {
     key_name = "vic_Key_New"
 #    count = "5" 
     tags = {
-        Name = "prueba1"
+        Name = "ansible"
     }
 }
 resource "aws_instance" "six-server" {
     ami = "ami-0747bdcabd34c712a" 
     instance_type = "t2.micro"
-#    count = "5" 
+    count = "2" 
     tags = {
         Name = "server_dev"
     }
