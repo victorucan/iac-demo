@@ -10,6 +10,7 @@ resource "aws_instance" "first-server" {
 resource "aws_instance" "six-server" {
     ami = "ami-0747bdcabd34c712a" 
     instance_type = "t2.micro"
+    key_name = "vic_Key_New"
     count = "2" 
     tags = {
         Name = "server_dev"
